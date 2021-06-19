@@ -1,0 +1,324 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin:0;
+  background-color: black;
+}
+
+header{
+  height:100px; 
+  width:100%;
+  background-color: black;
+  color:white;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left{
+ float:left;
+ padding:20px;
+}
+
+.header-left img{
+	margin-right:10px;
+	vertical-align: middle;
+  width:40px;
+}
+
+.header-left a{
+  color:white;
+}
+
+.headerleft span{
+	vertical-align: middle;
+}
+
+/* menu-icon*/
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 40px;
+  padding: 21px;
+  display:none;
+}
+
+.header-right{
+  float: right;
+  padding:30px 50px;
+  font-family: 'Kaushan Script', cursive;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .header-right a{
+    line-height:65px;
+    display:block;
+    padding:0px 20px;
+    float:left;
+    transition:all 0.6s;
+    color:white;
+  }
+  
+  .header-right a:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+  }
+
+  .top-wrapper{
+    text-align: center;
+    color:rgb(250, 249, 249);
+    width:100%;
+  }
+
+  .top-wrapper h1{
+    letter-spacing: 5px;
+    font-size:60px;
+    padding:20px;
+    font-family: 'Kaushan Script', cursive;
+  }
+
+  .top-wrapper p{
+    padding:10px;
+    font-size:20px;
+    font-family: "Hannari";
+  }
+
+
+  .container{
+    background-size: cover;
+    background-color:rgba(255,255,255,0.3);
+    background-blend-mode:lighten;
+    width:100%;
+    margin:0 auto;
+    padding:300px 0;
+    color:black;
+    opacity : 0;
+   transform: translateY(20px);
+   transition: all 1s;
+   object-fit: cover; 
+
+  }
+
+
+.first{
+  background-image: url(../flower/20.jpg);
+  object-fit:cover;
+}
+
+ .second{
+    background-image: url(../flower/22.jpg);
+  }
+
+  .third{
+    background-image: url(../flower/05.jpg);
+  }
+
+  .main-wrapper{
+    padding-bottom:100px;
+  }
+
+.us-wrapper{
+  text-align: center;
+  padding-top:90px;
+}
+
+.us-wrapper img{
+  width:500px;
+  display:inline-block;
+ }
+
+.content {
+  color: white;
+  display:inline-block ;
+  padding:0 60px;
+}
+
+.content h3{
+  font-family: 'Kaushan Script', cursive;
+ margin-bottom:90px;
+  padding-bottom:3px;
+  font-size:25px;
+}
+
+.content h2{
+  font-family: 'Kaushan Script', cursive;
+  word-spacing: 5px;
+  border-bottom: white solid 2px;
+  }
+  
+  .content p{
+    margin:1cm auto;
+    font-family: "Hannari";
+  }
+
+
+
+.contact-wrapper{
+  color:white;
+  text-align: center;
+  padding:40px;
+}
+
+.contact-wrapper h2{
+  font-family: 'Kaushan Script', cursive;
+}
+
+.contact-contents{
+  margin: 0 auto;
+  border:1px solid white;
+  padding:70px 0;
+  margin-top: 50px;
+  width:auto;
+}
+
+.contact-contents p{
+  font-family: "Hannari";
+}
+
+.btn-wrapper {
+  text-align: center;
+  padding-top:30px;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.phone {
+border:1px solid white;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+  margin-right: 10px;
+}
+
+.instagram{
+  background-color:#ee27ee ;
+}
+
+
+
+
+.store-wrapper{
+  text-align: center;
+  background-image:url("../flower/01.jpg") ;
+ background-size: cover;
+ position: relative;
+ z-index: 0;
+ overflow: hidden;
+}
+
+.store-wrapper:before{
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.store-wrapper h2{
+  font-family: 'Kaushan Script', cursive;
+  padding:80px 0;
+}
+
+.overview{
+  background-color:rgba(255, 255, 255, 0.5);
+  margin:0 auto;
+}
+
+.adress{
+  font-family: "Hannari"; 
+}
+
+dl{
+padding:30px;
+}
+
+dt {
+  float: left ;
+  clear: left ;
+  width: 120px ;
+  border-bottom:dashed 1px black ;
+  margin-bottom:15px;
+}
+
+dd {
+  float: left ;
+  margin-left: 1em ;
+}
+
+
+
+
+
+
+/* タブレット向けレイアウト */
+@media all and (max-width: 1000px) {
+ 
+  /* header-rightクラスのdisplayをnoneに指定してください */
+  .header-right{
+    display:none;
+  }
+  
+  /* menu-iconクラスのdisplayをblockに指定してください  */
+  .menu-icon{
+    display:block;
+  }
+
+}
+
+
+/* スマホ向けレイアウト */
+@media all and (max-width: 670px) {
+
+  /* header-rightクラスのdisplayをnoneに指定してください */
+  .header-right{
+    display:none;
+  }
+  
+  /* menu-iconクラスのdisplayをblockに指定してください  */
+  .menu-icon{
+    display:block;
+  }
+
+}
