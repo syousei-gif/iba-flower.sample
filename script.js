@@ -19,22 +19,25 @@ setInterval(function(){
 
   if(bgImage.lastIndexOf("/20.jpg") >-1){
     $('.first').css('background-image', 'url(../flower/22.jpg)');
-    $('.first h1').html('HAPPNINESS WITH FLOWERS');
-    $('.first p').html('いつもの暮らしにちょっとした彩を。');
+    $('.first h1').html('敬う');
+    $('.first p').html('ー大切な人への”変わらぬ”想いー');
   }
   else if(bgImage.lastIndexOf("/22.jpg") >-1){
     $('.first').css('background-image', 'url(../flower/05.jpg)');
-    $('.first h1').html('SAMPLE OF SAMPLE');
-    $('.first p').html('この文はサンプルです。');
+    $('.first h1').html('彩る');
+    $('.first p').html('ー花を愛でる心の余裕ー');
   }
  else if(bgImage.lastIndexOf("/05.jpg") >-1){
     $('.first').css('background-image', 'url(../flower/20.jpg)');
-    $('.first h1').html('BRING A SMILE');
-    $('.first p').html('花で街に笑顔を。');
+    $('.first h1').html('祝う');
+    $('.first p').html('ー大切な人を大切に扱う生き方ー');
   }
-
 },3000);
 
+
+$('.menu-icon').click(function(){
+  $('.menu').toggle();
+});
 
 
 
