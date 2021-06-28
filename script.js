@@ -32,12 +32,20 @@ setInterval(function(){
     $('.first h1').html('祝う');
     $('.first p').html('ー大切な人を大切に扱う生き方ー');
   }
-},3000);
+},4000);
 
-
-$('.menu-icon').click(function(){
+$('.bar').click(function(){
   $('.menu').toggle();
+  $('.bar').css('display','none');
+  $('.cross').css('display','block');
 });
+
+$('.cross').click(function(){
+  $('.menu').toggle();
+  $('.cross').css('display','none');
+  $('.bar').css('display','block');
+});
+
 
 
 
