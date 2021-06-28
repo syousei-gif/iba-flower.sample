@@ -44,8 +44,8 @@ header{
 	vertical-align: middle;
 }
 
-/* menu-icon*/
-.menu-icon {
+/* ハンバーガー*/
+.bar {
   color:black;
   float: right;
   font-size: 40px;
@@ -53,7 +53,21 @@ header{
   display:none;
 }
 
-.menu-icon:hover{
+.bar:hover{
+  cursor:pointer;
+}
+
+
+.cross {
+  color:black;
+  float: right;
+  font-size: 40px;
+  padding: 21px;
+  display:none;
+  }
+  
+
+.cross:hover{
   cursor:pointer;
 }
 
