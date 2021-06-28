@@ -140,6 +140,15 @@ header{
   object-fit:cover;
 }
 
+.container h1{
+  font-size: 90px;
+  font-weight: normal;
+}
+
+.container p{
+  font-size: 30px;
+}
+
 
 .info{
   text-align: center;
