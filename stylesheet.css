@@ -212,10 +212,12 @@ color:#87CEFA;
 .content h2{
   word-spacing: 5px;
   border-bottom: black solid 2px;
+  font-size:40px;
   }
   
   .content p{
     margin:1cm auto;
+    font-size:25px;
   }
 
 
