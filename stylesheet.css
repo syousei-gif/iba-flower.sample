@@ -12,17 +12,17 @@ h1, h2, h3, h4, h5, h6, p, div {
 
 body {
   margin:0;
-  background-color: black;
+  background-color: #FAF0E6;
+  color:black;
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro";
 }
 
 header{
-  height:100px; 
   width:100%;
-  background-color: black;
-  color:white;
+  background-color: white;
   position :fixed;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .header-left{
@@ -31,13 +31,13 @@ header{
 }
 
 .header-left img{
-	margin-right:10px;
-	vertical-align: middle;
-  width:40px;
+margin-right:10px;
+vertical-align: middle;
+width:40px;
 }
 
 .header-left a{
-  color:white;
+  color:black;
 }
 
 .headerleft span{
@@ -46,17 +46,21 @@ header{
 
 /* menu-icon*/
 .menu-icon {
-  color: white;
+  color:black;
   float: right;
   font-size: 40px;
   padding: 21px;
   display:none;
 }
 
+.menu-icon:hover{
+  cursor:pointer;
+}
+
+
 .header-right{
   float: right;
-  padding:30px 50px;
-  font-family: 'Kaushan Script', cursive;
+  padding:30px 50px 0 50px;
   }
   
   a{
@@ -69,11 +73,30 @@ header{
     padding:0px 20px;
     float:left;
     transition:all 0.6s;
-    color:white;
+    color:black;
   }
   
   .header-right a:hover{
-    background-color:rgba(255, 255, 255, 0.3);
+    background-color:rgba(78, 73, 73, 0.3);
+  }
+
+  .menu{
+    clear:both;
+
+    display:none;
+  }
+
+  .menu a{
+    line-height:65px;
+    display:block;
+    padding:0px 20px;
+    float:left;
+    transition:all 0.6s;
+    color:black;
+  }
+
+  .menu a:hover{
+    background-color:rgba(78, 73, 73, 0.3);
   }
 
   .top-wrapper{
@@ -86,13 +109,13 @@ header{
     letter-spacing: 5px;
     font-size:60px;
     padding:20px;
-    font-family: 'Kaushan Script', cursive;
+    
   }
 
   .top-wrapper p{
     padding:10px;
     font-size:20px;
-    font-family: "Hannari";
+    
   }
 
 
@@ -113,25 +136,51 @@ header{
 
 
 .first{
-  background-image: url(../flower/20.jpg);
+  background-image: url(20.jpg);
   object-fit:cover;
 }
 
- .second{
-    background-image: url(../flower/22.jpg);
-  }
 
-  .third{
-    background-image: url(../flower/05.jpg);
-  }
+.info{
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  width:70%;
+  border:black solid 2px;
+  border-radius: 40px;
+  margin-top:30px;
+  position:absolute;
+  top:700px;
+  left:90px;
+  right:90px;
+}
 
-  .main-wrapper{
-    padding-bottom:100px;
+.info h2{
+  padding:20px 0;
+}
+
+.info-contents{
+  padding:10px 30px;
+}
+
+.info-contents a{
+color:black;
+}
+
+.info-contents a:hover{
+color:#87CEFA;
+}
+
+
+
+
+#main-wrapper{
+    padding-top:250px;
   }
 
 .us-wrapper{
-  text-align: center;
   padding-top:90px;
+  text-align: center;
 }
 
 .us-wrapper img{
@@ -140,52 +189,71 @@ header{
  }
 
 .content {
-  color: white;
   display:inline-block ;
   padding:0 60px;
 }
 
-.content h3{
-  font-family: 'Kaushan Script', cursive;
+
+.us-wrapper h3{
  margin-bottom:90px;
   padding-bottom:3px;
   font-size:25px;
 }
 
 .content h2{
-  font-family: 'Kaushan Script', cursive;
   word-spacing: 5px;
-  border-bottom: white solid 2px;
+  border-bottom: black solid 2px;
   }
   
   .content p{
     margin:1cm auto;
-    font-family: "Hannari";
   }
 
 
 
-.contact-wrapper{
-  color:white;
+#product-wrapper{
   text-align: center;
-  padding:40px;
+  margin: 0 auto;
+  padding:60px 0 50px 0;
+  background-color:#FAEBD7 ; 
 }
 
-.contact-wrapper h2{
-  font-family: 'Kaushan Script', cursive;
+#product-wrapper h1{
+  padding-top:30px;
+}
+
+.kind{
+  display:inline-block;
+  padding:30px 30px 0 0;
+}
+
+.kind img{
+  display:block;
+}
+
+
+
+
+
+
+
+
+#contact-wrapper{
+  text-align: center;
+  padding:100px;
 }
 
 .contact-contents{
   margin: 0 auto;
-  border:1px solid white;
+  border:2px solid black;
+  background-color: white;
   padding:70px 0;
   margin-top: 50px;
   width:auto;
+  border-radius: 20px;
 }
 
-.contact-contents p{
-  font-family: "Hannari";
-}
+
 
 .btn-wrapper {
   text-align: center;
@@ -198,12 +266,11 @@ header{
 
 .btn {
   padding: 8px 24px;
-  color: white;
   display: inline-block;
   opacity: 0.8;
   border-radius: 4px;
   text-align: center;
-  font-family: 'Kaushan Script', cursive;
+  color:black;
 }
 
 .btn:hover {
@@ -211,7 +278,7 @@ header{
 }
 
 .phone {
-border:1px solid white;
+border:1px solid black;
 }
 
 .facebook {
@@ -231,16 +298,16 @@ border:1px solid white;
 
 
 
-.store-wrapper{
+#store-wrapper{
   text-align: center;
-  background-image:url("../flower/01.jpg") ;
+  background-image:url("01.jpg") ;
  background-size: cover;
  position: relative;
  z-index: 0;
  overflow: hidden;
 }
 
-.store-wrapper:before{
+#store-wrapper:before{
   content: '';
   background: inherit;
   -webkit-filter: blur(5px);
@@ -256,8 +323,7 @@ border:1px solid white;
   z-index: -1;
 }
 
-.store-wrapper h2{
-  font-family: 'Kaushan Script', cursive;
+#store-wrapper h2{
   padding:80px 0;
 }
 
@@ -266,9 +332,6 @@ border:1px solid white;
   margin:0 auto;
 }
 
-.adress{
-  font-family: "Hannari"; 
-}
 
 dl{
 padding:30px;
@@ -295,30 +358,38 @@ dd {
 /* タブレット向けレイアウト */
 @media all and (max-width: 1000px) {
  
-  /* header-rightクラスのdisplayをnoneに指定してください */
   .header-right{
     display:none;
   }
   
-  /* menu-iconクラスのdisplayをblockに指定してください  */
   .menu-icon{
     display:block;
   }
 
+  .us-wrapper img{
+    display:block;
+    margin:0 auto;
+   }
 }
 
 
 /* スマホ向けレイアウト */
 @media all and (max-width: 670px) {
-
-  /* header-rightクラスのdisplayをnoneに指定してください */
+  
   .header-right{
     display:none;
   }
   
-  /* menu-iconクラスのdisplayをblockに指定してください  */
   .menu-icon{
     display:block;
   }
+
+
+  .us-wrapper img{
+    display:block;
+    margin:0 auto;
+   }
+  
+
 
 }
